@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cyber sheild| Advanced Digital Protection</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;500;700&display=swap');
+        
+        body {
+            font-family: 'Space Grotesk', sans-serif;
+            background-color: #050a10;
+        }
+
+        .hero-gradient {
+            background: radial-gradient(circle at 50% 50%, #1e3a8a 0%, #050a10 70%);
+        }
+
+        .glass-card {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .glass-card:hover {
+            border: 1px solid #3b82f6;
+            transform: translateY(-5px);
+        }
+    </style>
+</head>
+<body class="text-gray-100">
+
+    <!-- Navigation -->
+    <nav class="flex items-center justify-between px-8 py-6 sticky top-0 z-50 bg-opacity-90 bg-slate-950 backdrop-blur-md">
+        <div class="flex items-center space-x-2">
+            <i class="fas fa-shield-halved text-blue-500 text-2xl"></i>
+            <span class="text-2xl font-bold tracking-tighter">CYBER<span class="text-blue-500">Shelid</span></span>
+        </div>
+        <div class="hidden md:flex space-x-8 font-medium">
+            <a href="#" class="hover:text-blue-400 transition">Services</a>
+            <a href="#" class="hover:text-blue-400 transition">Solutions</a>
+            <a href="#" class="hover:text-blue-400 transition">About</a>
+        </div>
+        <button class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-full font-bold transition">
+            Secure Now
+        </button>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero-gradient min-h-screen flex flex-col items-center justify-center text-center px-4">
+        <div class="inline-block px-4 py-1 border border-blue-500/30 rounded-full bg-blue-500/10 text-blue-400 text-sm mb-6">
+            Shielding over 2M+ Endpoints Globally
+        </div>
+        <h1 class="text-5xl md:text-8xl font-bold mb-6 tracking-tight">
+            Your Digital Fortress <br> 
+            <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-300">
+                Starts Here
+            </span>
+        </h1>
+        <p class="text-gray-400 max-w-2xl text-lg md:text-xl mb-10">
+            Real-time threat detection, automated response, and military-grade encryption. Cyber Shield provides the ultimate defense for the modern enterprise.
+        </p>
+        <div class="flex flex-col md:flex-row gap-4">
+            <button class="bg-white text-black px-8 py-4 rounded-lg font-bold text-lg hover:bg-gray-200 transition">
+                Get Started
+            </button>
+            <button class="glass-card px-8 py-4 rounded-lg font-bold text-lg hover:bg-white/10 transition">
+                View Live Demo
+            </button>
+        </div>
+    </header>
+
+    <!-- Features Section -->
+    <section class="py-24 px-8 max-w-7xl mx-auto">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="glass-card p-8 rounded-2xl">
+                <i class="fas fa-user-secret text-3xl text-blue-500 mb-6"></i>
+                <h3 class="text-2xl font-bold mb-4">Threat Intel</h3>
+                <p class="text-gray-400 leading-relaxed">Advanced AI-driven analysis to predict and neutralize threats before they strike your network.</p>
+            </div>
+            <div class="glass-card p-8 rounded-2xl">
+                <i class="fas fa-lock text-3xl text-blue-500 mb-6"></i>
+                <h3 class="text-2xl font-bold mb-4">Zero Trust</h3>
+                <p class="text-gray-400 leading-relaxed">Full-stack zero-trust architecture ensuring that every connection is verified and secure.</p>
+            </div>
+            <div class="glass-card p-8 rounded-2xl">
+                <i class="fas fa-cloud-bolt text-3xl text-blue-500 mb-6"></i>
+                <h3 class="text-2xl font-bold mb-4">Cloud Defense</h3>
+                <p class="text-gray-400 leading-relaxed">Secure your hybrid and multi-cloud environments with a single, unified control plane.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="border-t border-white/10 py-12 px-8 text-center text-gray-500">
+        <p>© 2024 Cyber Shield Technologies. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

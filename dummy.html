@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cyber Shield</title>
+
+<style>
+
+/* ===== GLOBAL STYLE ===== */
+body{
+    margin:0;
+    font-family:Arial, Helvetica, sans-serif;
+    background:black;
+    color:#00ffcc;
+    overflow-x:hidden;
+}
+
+/* ===== NAVBAR ===== */
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 40px;
+    background:#050505;
+    border-bottom:2px solid #00ffcc;
+}
+
+.logo{
+    font-size:26px;
+    font-weight:bold;
+    color:#00ffcc;
+    text-shadow:0 0 10px #00ffcc;
+}
+
+nav ul{
+    list-style:none;
+    display:flex;
+}
+
+nav ul li{
+    margin-left:25px;
+}
+
+nav ul li a{
+    color:white;
+    text-decoration:none;
+    transition:0.3s;
+}
+
+nav ul li a:hover{
+    color:#00ffcc;
+}
+
+/* ===== HERO SECTION ===== */
+.hero{
+    height:90vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    flex-direction:column;
+}
+
+.hero h1{
+    font-size:60px;
+    text-shadow:0 0 20px #00ffcc;
+}
+
+.hero p{
+    font-size:20px;
+    color:#ccc;
+}
+
+/* BUTTON */
+.btn{
+    margin-top:20px;
+    padding:15px 30px;
+    border:none;
+    background:#00ffcc;
+    color:black;
+    font-weight:bold;
+    cursor:pointer;
+    transition:0.4s;
+}
+
+.btn:hover{
+    box-shadow:0 0 20px #00ffcc;
+    transform:scale(1.1);
+}
+
+/* ===== SERVICES ===== */
+.services{
+    padding:60px;
+    text-align:center;
+}
+
+.cards{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+}
+
+.card{
+    background:#0b0b0b;
+    margin:20px;
+    padding:30px;
+    width:250px;
+    border:1px solid #00ffcc;
+    transition:0.4s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 0 20px #00ffcc;
+}
+
+/* ===== ABOUT ===== */
+.about{
+    padding:60px;
+    background:#050505;
+    text-align:center;
+}
+
+/* ===== CONTACT ===== */
+.contact{
+    padding:60px;
+    text-align:center;
+}
+
+input, textarea{
+    width:80%;
+    padding:12px;
+    margin:10px;
+    background:black;
+    border:1px solid #00ffcc;
+    color:white;
+}
+
+/* ===== FOOTER ===== */
+footer{
+    background:#000;
+    text-align:center;
+    padding:20px;
+    border-top:1px solid #00ffcc;
+}
+
+/* ===== ANIMATION ===== */
+.glow{
+    animation:glow 2s infinite alternate;
+}
+
+@keyframes glow{
+    from{ text-shadow:0 0 10px #00ffcc;}
+    to{ text-shadow:0 0 30px #00ffcc;}
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav>
+<div class="logo">Cyber Shield</div>
+
+<ul>
+<li><a href="#">Home</a></li>
+<li><a href="#services">Services</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+<h1 class="glow">CYBER SHIELD</h1>
+<p>Protecting Your Digital World</p>
+<button class="btn" onclick="alert('Cyber Shield Activated!')">
+Activate Protection
+</button>
+</section>
+
+<!-- SERVICES -->
+<section class="services" id="services">
+<h2>Our Services</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>Network Security</h3>
+<p>Advanced firewall and monitoring solutions.</p>
+</div>
+
+<div class="card">
+<h3>Ethical Hacking</h3>
+<p>Identify vulnerabilities before hackers do.</p>
+</div>
+
+<div class="card">
+<h3>Data Protection</h3>
+<p>Encryption and secure cloud protection.</p>
+</div>
+
+</div>
+</section>
+
+<!-- ABOUT -->
+<section class="about" id="about">
+<h2>About Cyber Shield</h2>
+<p>
+Cyber Shield is a next-generation cybersecurity platform
+designed to defend businesses against modern cyber threats.
+</p>
+</section>
+
+<!-- CONTACT -->
+<section class="contact" id="contact">
+<h2>Contact Us</h2>
+
+<input type="text" placeholder="Your Name"><br>
+<input type="email" placeholder="Email"><br>
+<textarea placeholder="Message"></textarea><br>
+
+<button class="btn">Send Message</button>
+
+</section>
+
+<!-- FOOTER -->
+<footer>
+<p>© 2026 Cyber Shield | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>
